@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Tour Companion — Manage Users</title>
+	<meta name="description" content="Admin: manage users" />
+</head>
+<body>
+	<header>
+		<div class="site-name">Tour Companion</div>
+		<nav aria-label="Primary">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About</a></li>
+				<li><a href="../services.html">Services</a></li>
+				<li><a href="../resources.html">Resources</a></li>
+				<li><a href="../subscription.html">Subscription</a></li>
+				<li><a href="../contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		   <h1>User Accounts</h1>
+
+		   <section class="user-management-header">
+			   <input type="text" placeholder="Search by name, email, or ID">
+			   <select name="tier-filter">
+				   <option value="">All Tiers</option>
+				   <option value="basic">Basic</option>
+				   <option value="gold">Gold</option>
+				   <option value="platinum">Platinum</option>
+			   </select>
+		   </section>
+
+		   <section class="user-list-view">
+			   <h2>Account List</h2>
+			   <table>
+				   <thead>
+					   <tr>
+						   <th>Name</th>
+						   <th>Email</th>
+						   <th>Subscription Tier</th>
+						   <th>Status</th>
+						   <th>Join Date</th>
+						   <th>Last Login</th>
+						   <th>Actions</th>
+					   </tr>
+				   </thead>
+				   <tbody>
+					   <tr>
+						   <td>Priya Sharma</td>
+						   <td>priya@email.com</td>
+						   <td>Platinum</td>
+						   <td>Active</td>
+						   <td>2024-03-12</td>
+						   <td>2025-08-18</td>
+						   <td>
+							   <button type="button">View</button>
+							   <button type="button">Delete</button>
+						   </td>
+					   </tr>
+					   <tr>
+						   <td>Alex Roy</td>
+						   <td>alex@email.com</td>
+						   <td>Gold</td>
+						   <td>Suspended</td>
+						   <td>2023-11-02</td>
+						   <td>2025-07-30</td>
+						   <td>
+							   <button type="button">View</button>
+							   <button type="button">Delete</button>
+						   </td>
+					   </tr>
+				   </tbody>
+			   </table>
+		   </section>
+
+		   <section class="view-account-panel">
+			   <h2>Account Snapshot</h2>
+			   <div><strong>Name:</strong> Priya Sharma</div>
+			   <div><strong>Email:</strong> priya@email.com</div>
+			   <div><strong>Subscription Tier:</strong> Platinum (expires 2026-03-12)</div>
+			   <div><strong>Trips Booked:</strong> 8</div>
+			   <div><strong>Last Trip:</strong> Paris</div>
+			   <div><strong>Support Tickets:</strong> 2 opened / 2 resolved</div>
+			   <div><strong>Notes:</strong> VIP client, prefers email support.</div>
+		   </section>
+
+		
+	</main>
+	<footer>
+		   <div>
+			   <div>Tour Companion</div>
+			   <div>© 2025 Tour Companion. All rights reserved.</div>
+		   </div>
+		   <div>
+			   <div>Quick Links</div>
+			   <ul>
+				   <li><a href="../about.html">About</a></li>
+				   <li><a href="../services.html">Services</a></li>
+				   <li><a href="../resources.html">Resources</a></li>
+				   <li><a href="../subscription.html">Subscription</a></li>
+				   <li><a href="../contact.html">Contact</a></li>
+			   </ul>
+		   </div>
+		   <div>
+			   <div>Contact</div>
+			   <div>Email: <a href="mailto:info@tourcompanion.com">info@tourcompanion.com</a></div>
+			   <div>Phone: <a href="tel:+1234567890">+1 234 567 890</a></div>
+		   </div>
+		   <div>
+			   <div>Follow Us</div>
+			   <a href="#">&#x1F426;</a>
+			   <a href="#">&#x1F4F7;</a>
+			   <a href="#">&#x1F4F1;</a>
+		   </div>
+	</footer>
+</body>
+</html>
+

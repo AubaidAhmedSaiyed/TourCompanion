@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Tour Companion — Subscription</title>
+	<meta name="description" content="Subscription plans and signup" />
+</head>
+<body>
+	   <header>
+		   <div class="site-name">Tour Companion</div>
+		   <nav aria-label="Primary">
+			   <ul>
+				   <li><a href="index.html">Home</a></li>
+				   <li><a href="about.html">About</a></li>
+				   <li><a href="services.html">Services</a></li>
+				   <li><a href="resources.html">Resources</a></li>
+				   <li><a href="subscription.html">Subscription</a></li>
+				   <li><a href="contact.html">Contact</a></li>
+			   </ul>
+		   </nav>
+	   </header>
+
+	   <main>
+		   <h1>Choose Your Plan</h1>
+		   <p>We offer three subscription tiers tailored for every traveler. Compare features and pricing, then sign up for the plan that fits your journey best.</p>
+
+		   <!-- Pricing Table / Cards -->
+		   <section class="pricing-tiers">
+			   <div class="tiers-row">
+				   <div class="tier-card">
+					   <h2>Tier 1 – Essential Guide</h2>
+					   <ul>
+						   <li>Guides + paperwork checklist</li>
+						   <li>Hotel & transport booking help</li>
+						   <li>Access to resources</li>
+					   </ul>
+					   <div class="price">$49 / day</div>
+					   <button type="button" onclick="selectPlan('Tier 1 – Essential Guide')">Subscribe</button>
+				   </div>
+				   <div class="tier-card">
+					   <h2>Tier 2 – Guided Experience</h2>
+					   <ul>
+						   <li>Everything in Tier 1</li>
+						   <li>In-person guide + translation</li>
+						   <li>24/7 assistance</li>
+						   <li>Priority bookings</li>
+					   </ul>
+					   <div class="price">$299 / day</div>
+					   <button type="button" onclick="selectPlan('Tier 2 – Guided Experience')">Subscribe</button>
+				   </div>
+				   <div class="tier-card">
+					   <h2>Tier 3 – Premium Luxury Experience</h2>
+					   <ul>
+						   <li>Everything in Tier 1 & 2</li>
+						   <li>Personalized travel plan</li>
+						   <li>1-day/1-night premium villa stay</li>
+						   <li>Private local tours</li>
+					   </ul>
+					   <div class="price">$1999 / day</div>
+					   <button type="button" onclick="selectPlan('Tier 3 – Premium Luxury Experience')">Subscribe</button>
+				   </div>
+			   </div>
+		   </section>
+
+		   <!-- Subscription Form -->
+		   <section class="subscription-form-section">
+			   <h2>Subscribe Now</h2>
+			   <form id="subscription-form" action="#" method="post">
+				   <label for="fullName">Full Name</label>
+				   <input type="text" id="fullName" name="fullName" required>
+
+				   <label for="email">Email</label>
+				   <input type="email" id="email" name="email" required>
+
+				   <label for="phone">Phone Number</label>
+				   <input type="tel" id="phone" name="phone" required>
+
+				   <label for="plan">Selected Plan</label>
+				   <input type="text" id="plan" name="plan" readonly required>
+
+				   <label for="payment">Payment Option</label>
+				   <select id="payment" name="payment" required>
+					   <option value="">Select</option>
+					   <option value="credit">Credit Card</option>
+					   <option value="paypal">PayPal</option>
+					   <option value="upi">UPI</option>
+				   </select>
+
+				   <button type="submit">Confirm Subscription</button>
+			   </form>
+		   </section>
+
+		   <!-- FAQ Section -->
+		   <section class="faq-section">
+			   <h2>Frequently Asked Questions</h2>
+			   <div class="faq-item">
+				   <strong>Can I upgrade later?</strong>
+				   <p>Yes, you can upgrade your plan at any time.</p>
+			   </div>
+			   <div class="faq-item">
+				   <strong>Do you help with visa?</strong>
+				   <p>Yes, visa assistance is included in Tier 1 and above.</p>
+			   </div>
+			   <div class="faq-item">
+				   <strong>Is there a refund policy?</strong>
+				   <p>Refunds are available for cancellations made at least 7 days before your trip. See our terms for details.</p>
+			   </div>
+		   </section>
+
+		   <!-- CTA -->
+		   <section class="final-cta">
+			   <a href="contact.html">Need Help Choosing? Contact Us</a>
+		   </section>
+	   </main>
+
+	   <footer>
+		   <div>
+			   <div>
+				   <div>Tour Companion</div>
+				   <div>© 2025 Tour Companion. All rights reserved.</div>
+			   </div>
+			   <div>
+				   <div>Quick Links</div>
+				   <ul>
+					   <li><a href="about.html">About</a></li>
+					   <li><a href="services.html">Services</a></li>
+					   <li><a href="resources.html">Resources</a></li>
+					   <li><a href="subscription.html">Subscription</a></li>
+					   <li><a href="contact.html">Contact</a></li>
+				   </ul>
+			   </div>
+			   <div>
+				   <div>Contact</div>
+				   <div>Email: <a href="mailto:info@tourcompanion.com">info@tourcompanion.com</a></div>
+				   <div>Phone: <a href="tel:+1234567890">+1 234 567 890</a></div>
+			   </div>
+			   <div>
+				   <div>Follow Us</div>
+				   <a href="#">&#x1F426;</a>
+				   <a href="#">&#x1F4F7;</a>
+				   <a href="#">&#x1F4F1;</a>
+			   </div>
+		   </div>
+	   </footer>
+
+	   <script>
+	   // Simple JS to auto-fill plan in form when Subscribe is clicked
+	   function selectPlan(planName) {
+		   document.getElementById('plan').value = planName;
+		   document.getElementById('subscription-form').scrollIntoView({behavior: 'smooth'});
+	   }
+	   </script>
+</body>
+</html>
+
