@@ -1,0 +1,440 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #e9f4fb, #e4f4ff);
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+ul{
+    margin:0;
+    padding: 10px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #222;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: rgb(0, 57, 126);
+    color: #fff;
+}
+
+.hero{
+    position: relative;
+    background:linear-gradient(135deg, #aadaff, #aed6ee);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #011f40;
+    text-align: center;
+}
+.hero-container{
+    font-size: 20px;
+    height: 50vh;
+}
+.hero-image img{
+    position: absolute;
+    top:70px;
+    height: 70px;
+    right: 190px;
+    
+}
+
+.hero-image2 img{
+    position: absolute;
+    top:350px;
+    height: 100px;
+    right: 1150px;
+    border-radius: 20px;
+}
+.hero-image3 img{
+    position: absolute;
+    top:450px;
+    height: 250px;
+    right: 450px;
+    border-radius: 20px;
+    margin:10px;
+    transform: rotate(+25deg);
+    z-index: 1;
+}
+.hero-image4 img{
+    position: absolute;
+    top:430px;
+    height: 270px;
+    width: 220px;
+    right: 610px;
+    border-radius: 20px;
+    margin:10px;
+    z-index: 10;
+}
+.hero-image5 img{
+    position: absolute;
+    top:470px;
+    height: 250px;
+    width: 220px;
+    right: 750px;
+    border-radius: 20px;
+    margin-right:50px;
+    transform: rotate(-25deg);
+    z-index: 1;
+    
+}
+
+.hero .btn a{
+    text-decoration: none;
+    color:aliceblue
+   
+}
+
+.cta-btn1{
+
+    background-color:#011f40;
+    margin: 30px;
+    font-size: 17px;
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+
+}
+
+.cta-btn2{
+
+    background-color:#011f40;
+    margin: 30px;
+    font-size: 17px;
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+
+}
+.highlights h2{
+
+    margin-top: 100px;
+    padding: 30px;
+    font-size: 30px;
+    color:#032d5a
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 0 0;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    width: 350px;
+    height: 450px;
+    border:#011f40 1px solid;
+    box-shadow: 4px 6px 24px rgb(183, 221, 240);
+}
+.card:hover {
+     box-shadow:4px 4px 10px rgba(1, 78, 113, 0.838);
+}
+.card div{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.card h3 {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+    color: #011f40;
+    font-size: 1.4em;
+}
+
+.card ul{
+    padding:40px;
+    font-size: 20px;
+    text-align: start;
+
+}
+
+.card li{
+    list-style:disc;
+    margin-bottom: 10px;
+}
+
+.cta-btn3 a{
+    text-decoration: none;
+     color:aliceblue;
+}
+
+.cta-btn3 button{
+    background-color:#011f40;
+    font-weight:600;
+    font-size: 17px;
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+}
+.resources-preview {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('/tour-companion/assets/images/pexels-pixabay-358223.jpg') no-repeat center center/cover;
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+
+
+.resources-preview .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 10); 
+    z-index: 1;
+}
+
+.resources-preview h2,
+.resources-preview .resources-card-column,
+.resources-preview .resources-btn {
+    position: relative;
+    z-index: 100;
+    color: white;
+}
+
+.resources-preview h2{
+     margin-top: 100px;
+    padding: 30px;
+    font-size: 30px;
+    color:#032d5a
+}
+.resources-card-column {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 30px 0 0 0;
+}
+.resources-card-column .card {
+    width: 400px;
+    height: 200px;
+    background: #f8fbff;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    padding: 24px 20px;
+    text-align: start;
+    margin:10px
+}
+.resources-card-column .card h4 {
+    margin-top: 10px;
+    color: #0a2a4d;
+    font-size: 25px;
+}
+.resources-card-column .card p {
+    color: #333;
+
+}
+.resources-btn {
+    background-color: #011f40;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 17px;
+    margin: 10px 0;
+
+}
+.resources-btn:hover {
+    background-color: #0d3c6e;
+}
+
+.why-choose-us {
+    display: flex;
+    color: white;
+    padding:0;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.heading {
+    color:#032d5a;
+    background-color: #ffffff;
+    flex:1;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.heading h2{
+    padding: 10px;
+}
+.reason {
+    background-color:#f8fcff ;
+    flex: 2; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+.card-r{
+    background: rgb(0, 40, 78);
+    padding: 20px;
+    margin:10px;
+    border-radius: 8px;
+}
+.reason ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reason li {
+    margin-bottom: 10px;
+}
+.testimonials {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: bold;
+}
+
+.testimonials div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial-text {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #555;
+    line-height: 22px;
+}
+
+.testimonial-author {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.footer-body{
+    background: linear-gradient(135deg,#222,rgb(23, 22, 22));
+    color:rgb(227, 237, 246);
+}
+.footer-container{
+    display: flex;
+    justify-content:space-around;
+ 
+}
+.footer-container .link-column{
+    padding: 20px;
+}
+.footer-container .link-column ul{
+    list-style: none;
+     margin-bottom: 5px;
+    text-align: center;
+}
+.footer-container .link-column li{
+     margin-bottom: 5px;
+}
+.footer-container .link-column a{
+    text-decoration: none;
+    color:rgb(227, 237, 246);
+}
+
+.footer-container .link-column a:hover{
+    text-decoration: underline;
+    color:#aed6ee;
+}
+
+.footer-container .contact-column{
+    padding: 20px;
+}
+.footer-container .contact-column a{
+    margin-bottom: 6px;
+    text-decoration: none;
+    color:rgb(227, 237, 246);
+}
+.footer-container .contact-column a:hover{
+    text-decoration: underline;
+    color:#aed6ee;
+}
+.footer-container .follow-column{
+    padding: 20px;
+}
+.footer-container .follow-column a{
+    margin-bottom: 6px;
+    text-decoration: none;
+    color:rgb(227, 237, 246);
+}
+.footer-container .follow-column a:hover{
+    text-decoration: underline;
+    color:#aed6ee;
+}
+
+.final-cta {
+  background: linear-gradient(135deg,rgba(198, 198, 198, 0.644), rgba(5, 22, 58, 0.6)), url('/tour-companion/assets/images/pexels-pixabay-358223.jpg');
+  color: #fff;
+    background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 15px;
+  margin: 50px auto;
+  max-width: 900px;
+}
+.final-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.final-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.cta-button {
+  background: #072443;
+  color:aliceblue;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}

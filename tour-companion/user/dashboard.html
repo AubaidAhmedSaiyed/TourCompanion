@@ -4,25 +4,27 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Tour Companion — User Dashboard</title>
-	<meta name="description" content="Your Tour Companion dashboard" />
+	<link rel="stylesheet"  href="/tour-companion/user/user.css">
 </head>
 <body>
 	<header>
 		<div class="site-name">Tour Companion</div>
 		<nav aria-label="Primary">
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../about.html">About</a></li>
-				<li><a href="../services.html">Services</a></li>
-				<li><a href="../resources.html">Resources</a></li>
-				<li><a href="../subscription.html">Subscription</a></li>
-				<li><a href="../contact.html">Contact</a></li>
-			</ul>
+			   <ul>
+				   <li><a href="../index.html">Home</a></li>
+				   <li><a href="../about.html">About</a></li>
+				   <li><a href="../services.html">Services</a></li>
+				   <li><a href="../resources.html">Resources</a></li>
+				   <li><a href="../subscription.html">Subscription</a></li>
+				   <li><a href="../contact.html">Contact</a></li>
+				   <li><a href="profile.html">Profile</a></li>
+				   <li><a href="#" onclick="alert('Signed out!')">Signout</a></li>
+			   </ul>
 		</nav>
 	</header>
 	<main>
 		   <section class="dashboard-header">
-			   <h1>Welcome, [User Name]!</h1>
+			   <h1>Welcome</h1>
 			   <div class="dashboard-summary">
 				   <div>Total Upcoming Trips: <strong>2</strong></div>
 				   <div>Active Subscription Plan: <strong>Premium</strong></div>
@@ -37,7 +39,7 @@
 				   <div><strong>Booking ID:</strong> #67890</div>
 				   <div><strong>Destination:</strong> Rome Adventure</div>
 				   <div><strong>Plan Type:</strong> Standard</div>
-				   <div><strong>Dates:</strong> 15 Aug – 22 Aug</div>
+				   <div><strong>Dates:</strong> 15 Aug -  22 Aug</div>
 				   <div><strong>Status:</strong> Confirmed</div>
 				   <div class="booking-actions">
 					   <button type="button">View Details</button>
@@ -50,7 +52,7 @@
 				   <div><strong>Booking ID:</strong> #54321</div>
 				   <div><strong>Destination:</strong> Thailand Explorer</div>
 				   <div><strong>Plan Type:</strong> Premium</div>
-				   <div><strong>Dates:</strong> 01 Jun – 10 Jun</div>
+				   <div><strong>Dates:</strong> 01 Jun- 10 Jun</div>
 				   <div><strong>Status:</strong> Completed</div>
 				   <div class="booking-actions">
 					   <button type="button">View Details</button>
@@ -85,8 +87,8 @@
 		   <section class="payment-history">
 			   <h2>Payment History</h2>
 			   <ul>
-				   <li>01 Jan 2025 – $1999 – Premium Plan</li>
-				   <li>01 Jun 2024 – $299 – Standard Plan</li>
+				   <li>01 Jan 2025 $1999 Premium Plan</li>
+				   <li>01 Jun 2024 $299 Standard Plan</li>
 			   </ul>
 		   </section>
 
