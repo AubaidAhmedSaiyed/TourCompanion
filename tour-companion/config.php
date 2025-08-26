@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "tour_db";
+$db = "tour_companion";
 
 $conn = new mysqli($host, $user, $pass, $db);
 

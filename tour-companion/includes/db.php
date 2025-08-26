@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$user = "root"; // XAMPP default
+$user = "root"; 
 $pass = "";
 $dbname = "tour_companion";
 
